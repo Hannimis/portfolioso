@@ -75,12 +75,11 @@ blockquote{
     overflow: hidden;
 }
 .parafs li:hover  p{
-    padding: 0.5em;
-    max-height: 100%;
+    max-height: 5rem;
 }
 .parafs li p{
+    padding: 0.5em;
     transition: 1s;
-    padding: 0;
     max-height: 0;
 }
 .parafs > *{
