@@ -2,7 +2,7 @@ body{
     background-color: #eee;
 }
 main .innerwrapper {
-    background-color: white;
+
 }
 .intro{
     display: flex;
@@ -37,6 +37,52 @@ main .innerwrapper {
         max-width: 100%;
     }
 }
-table > *{
-    border: 1px solid #000;
+@media screen and (max-width: 800px){
+    .snowden > *{
+        width: 100%;
+    }
+    .snowden{
+        flex-flow: wrap;
+    }
+    .edward{
+        max-width: 100%;
+        float: none;
+    }
+}
+
+.primary {
+    background-color: white;
+    margin-bottom: 3em;
+}
+.primary:first-of-type{
+    margin-top: 1em;
+}
+b{
+    font-weight: bold;
+}
+.parafs li{
+    margin: 1em 0.5em;
+    list-style: none;
+    border: 2px solid grey;
+}
+blockquote{
+    border: 1px dashed #000;
+}
+.parafs{
+    display: flex;
+}
+.parafs li{
+    overflow: hidden;
+}
+.parafs li:hover  p{
+    padding: 0.5em;
+    max-height: 100%;
+}
+.parafs li p{
+    transition: 1s;
+    padding: 0;
+    max-height: 0;
+}
+.parafs > *{
+    width: 50%;
 }
