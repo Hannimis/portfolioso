@@ -1,0 +1,42 @@
+body{
+    background-color: #eee;
+}
+main .innerwrapper {
+    background-color: white;
+}
+.intro{
+    display: flex;
+}
+.edward{
+    max-width: 50%;
+    float: right;
+}
+.edward img{
+    max-width: 100%;
+    display: block;
+}
+.explain{   
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.explain p{
+    max-height: 9em;
+}
+.snowden{
+    width: 50%;
+    display: flex;
+}
+.secu p{   
+    line-height: 1.5;
+}
+.secu{
+    width: 50%;
+}
+@media screen and (max-width: 700px){
+    .edward{
+        max-width: 100%;
+    }
+}
+table > *{
+    border: 1px solid #000;
+}

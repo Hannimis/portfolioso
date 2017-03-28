@@ -1,0 +1,86 @@
+nav {
+    background-color: white;
+}
+body{
+    background-color: #eef;
+}
+a.bla {
+    cursor: pointer;
+    color: blue;
+}
+main .innerwrapper > *{
+    background-color: white;
+}
+li > a {
+    cursor: pointer;
+}
+.nav-emner li{
+    margin: 0.7em 0;
+}
+.nav-emner li a{
+    padding: 0.5em 0;
+}
+.nav-emner li a:hover{
+    color: #aaa;
+}
+.nav-emner{
+    box-sizing: border-box;
+    padding: 0 0.5em; 
+    max-width: 15%;
+    position: fixed;
+    left: 10%;
+}
+#blocky{
+    width: 50%;
+    margin: 0.5em;
+}
+blockquote{
+    background-color: #eee;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+.nav-emner li a{
+    font-size: 1.5em;
+}
+.emner{
+    width: 75%;
+    margin-left: auto;
+}
+.emner img{
+    display: block;
+    max-width: 50%;
+    padding: 3em;
+    float: right;
+    box-sizing: border-box;
+    }
+.clearFix{
+    clear: both;
+    display: block;
+}
+h2{
+    margin: 0.5em 0;
+    font-size: 2em;
+    text-align: center;
+}
+h3{
+    font-size: 1.3em;
+}
+#arb img{
+    max-width: 40%;
+}
+@media screen and (max-width: 900px){
+    .emner{
+        margin: 0;
+        margin-left: auto;
+    }
+    .emner img{
+        max-width: 100%;
+    }
+}
+.clearMe{
+    width: 100%;
+    display: none;
+}
+.is-displayed{
+    display: block;
+}
