@@ -1,87 +1,37 @@
 body{
-    background-color: #eee;
+    background-color: #7887AB;
 }
-main .innerwrapper {
-
-}
-.intro{
-    display: flex;
-}
-.edward{
-    max-width: 50%;
-    float: right;
-}
-.edward img{
-    max-width: 100%;
-    display: block;
-}
-.explain{   
-    overflow-y: auto;
-    overflow-x: hidden;
-}
-.explain p{
-    max-height: 9em;
-}
-.snowden{
-    width: 50%;
-    display: flex;
-}
-.secu p{   
-    line-height: 1.5;
-}
-.secu{
-    width: 50%;
-}
-@media screen and (max-width: 700px){
-    .edward{
-        max-width: 100%;
-    }
-}
-@media screen and (max-width: 800px){
-    .snowden > *{
-        width: 100%;
-    }
-    .snowden{
-        flex-flow: wrap;
-    }
-    .edward{
-        max-width: 100%;
-        float: none;
-    }
-}
-
-.primary {
+.innerwrapper {
     background-color: white;
-    margin-bottom: 3em;
 }
-.primary:first-of-type{
-    margin-top: 1em;
+.primary {
+    padding: 1em;
+    justify-content: space-between;
 }
-b{
-    font-weight: bold;
-}
-.parafs li{
-    margin: 1em 0.5em;
-    list-style: none;
-    border: 2px solid grey;
-}
-blockquote{
-    border: 1px dashed #000;
-}
-.parafs{
+
+.intro{
+    margin: 0 auto;
     display: flex;
+    flex-flow: wrap;
+    max-width: 75%;
 }
-.parafs li{
-    overflow: hidden;
+.intro p{
+    width: 70%;
+    padding: 1em;
+    margin: 1em 0;
+    border: 1px dashed #ccc;
 }
-.parafs li:hover  p{
-    max-height: 5rem;
+.intro a{
+    display: inline-block;
+    width: 30%;
+    font-size: 1.5em;
+    height: 1em;
+    margin: auto 0;
+    text-align: center;
 }
-.parafs li p{
-    padding: 0.5em;
-    transition: 1s;
-    max-height: 0;
-}
-.parafs > *{
-    width: 50%;
+.intro img{
+    margin: 0 auto;
+    display: block;
+    max-height: 100%;
+    max-width: 100%; 
 }

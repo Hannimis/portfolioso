@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
     <head>
+        <title>Forside</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
         <meta charset="utf-8">
         <link rel=stylesheet href="style/reset.css">
@@ -12,14 +13,14 @@
     <body>
             
         <nav class="global">
-            <div class="nav-collapse nav-menu">
+            <div class="nav nav-collapse nav-menu">
             <ul>
-            <li><a href="index.html">Forside</a></li>    
-            <li><a href="nebula.html">Nebula</a></li>    
-            <li><a href="internet.html">Internettets betydning</a></li>    
-            <li><a href="infosoegning.html">Informationssøgning</a></li>    
-            <li><a href="datalovgivning.html">Datalovgivning</a></li>    
-            <li><a href="arbejdsmiljoe.html">Arbejdsmiljø</a></li>    
+            <li id="for"><a href="index.html">Forside</a></li>    
+            <li id="neb"><a href="nebula.html">Nebula</a></li>    
+            <li id="int"><a href="internet.html">Internettets betydning</a></li>    
+            <li id="inf"><a href="infosoegning.html">Informationssøgning</a></li>    
+            <li id="dat"><a href="datalovgivning.html">Datalovgivning</a></li>    
+            <li id="arb"><a href="arbejdsmiljoe.html">Arbejdsmiljø</a></li>    
             </ul>
             <div class="innerwrapper">
             </div>
@@ -33,32 +34,96 @@
             </div>
         </header>
         
-        
+                <div id="styleguide">
+                    <a id="close">X</a>
+                    <ul>
+                    <li class="farver">
+                    <h2>Farver</h2>    
+                        <table class="color-table">
+                    <tbody><tr>
+                        <th>Primary color:</th>
+                        <td class="sample sample-1 primary-1">
+                            <div class="white">#7887AB</div>
+                            <div class="black">#7887AB</div>
+                        </td>
+                        <td class="sample sample-2 primary-2">
+                            <div class="white">#4F628E</div>
+                            <div class="black">#4F628E</div>
+                        </td>
+                        <td class="sample sample-0 primary-0">
+                            <div class="white">#2E4272</div>
+                            <div class="black">#2E4272</div>
+                        </td>
+                        <td class="sample sample-3 primary-3">
+                            <div class="white">#162955</div>
+                            <div class="black">#162955</div>
+                        </td>
+                        <td class="sample sample-4 primary-4">
+                            <div class="white">#061539</div>
+                            <div class="black">#061539</div>
+                        </td>
+                    </tr>
+                </tbody></table>
+                        
+                    </li>
+                    <li class="font">
+                    <h2>Skrifttyper</h2>
+                        <div>
+                        <h3>Roboto - Navigations Menu</h3>    
+                        <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                        </div>
+                        <div>
+                        <h3>Slabs 27px - Headings</h3>    
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                        </div>
+                    </li>
+                    
+                    </ul>
+                </div>
         
         <div class="wrapper">
         
         <main class="global">
-            <div class="innerwrapper">
-                <ul class="nav-emner" id="emne-nav">
-                <li><a value="hel">Start</a></li>
-                <li><a value="neb">Nebula</a></li>
-                <li><a value="arb">Arbejdsmiljø</a></li>
-                <li><a value="dat">Datalovgivning</a></li>
-                <li><a value="inf">Informations søgning</a></li>
-                <li><a value="int">Internettets betydning</a></li>
-                
+            <div class="innerwrap2per">
+                <ul class="nav nav-emner" id="emne-nav">
+                <li  id="hel1">Start</li>
+                <li  id="neb1">Nebula</li>
+                <li  id="arb1">Arbejdsmiljø</li>
+                <li  id="dat1">Datalovgivning</li>
+                <li  id="inf1">Informations søgning</li>
+                <li  id="int1">Internettets betydning</li>     
                 </ul>
                 
-                <ul class="emner" id="list-ruler">
+                
+                
+                
+                
+                
+                
+                
+                <div class="emner" id="list-ruler">
                     <div class="clearMe is-displayed" id="hel">
                     <img src="img/business.jpg">
                         <h2>Start introduktion</h2>
-                        <p>Velkommen til min forside, på denne side kan du få en kort beskrivelse af hvad de forskellige emner består af, så du får et lille indblik i hvad denne side handler om. Det gør du ved at klikke på et af emnerne til venstre for denne tekst, og så vil det valgte emne blive vist.<br><br>
-                        
-                        Du kan også navigere oppe i toppen af skærmen til de forskellige undersider på samme måde.
-                        
+                        <p>
+                            Goddag! Prøv at lægge mærke til personen allermest til venstre på billedet, sådan havde jeg det da jeg skulle skrive teksten til forsiden, jeg har nemligt aldrig været særligt god til at åbne samtaler. <br><br>
+                            
+                            På denne webside vil jeg komme ind på 4 emner og en af vores tidligere opgaver. Du kan få et kort indblik i hvad der er på de forskellige undersider lige her på forsiden, det gør du ved at navigere til venstre på den vertikale menu. Hvis du vil læse mere ind i de forskellige emner, hvilket du jo selvfølgelig vil, så kan du gå til de andre undersider i toppen via den horisontale menubjælke.
                         </p>
-                        <span class="clearFix"></span></div>
+                        <span class="clearFix"></span>
+                    
+                    
+                    <div class="ref">
+                    <a id="style">Styleguide</a>
+                    <a target="_blank" href="https://app.moqups.com/rasm957i@cvkweb.dk/xjWSwAhWty/view">Wireframe</a>
+                        </div>
+                    
+                    
+                    </div>
                     
                     <div class="clearMe" id="arb">
                         <img src="img/arbejdsmiljoe.jpg">

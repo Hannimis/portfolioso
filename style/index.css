@@ -15,15 +15,90 @@ li > a {
     cursor: pointer;
 }
 .nav-emner li{
+    color: white;
     margin: 0.7em 0;
-}
-.nav-emner li a{
     padding: 0.5em 0;
 }
-.nav-emner li a:hover{
-    color: #aaa;
+.nav-emner li:hover{
+    background-color: rgba(255,255,255,0.5);
+}
+.farver .color-table{
+    background-color: white;
+}
+.color-table td div{
+    padding: 0.5em;
+}
+.color-table td div:first-of-type{
+    color: white;
+}
+.color-table td:nth-of-type(1){
+    background-color: #7887AB;
+}
+.color-table td:nth-of-type(2){
+    background-color: #4F628E;
+}
+
+.color-table td:nth-of-type(3){
+    background-color: #2E4272;
+}
+
+.color-table td:nth-of-type(4){
+    background-color: #162955;
+}
+
+.color-table td:nth-of-type(5){
+    background-color: #061539;
+}
+.font div{
+    color: white;
+    margin: 0 auto;
+    max-width: 50%;
+}
+.font div:first-of-type *{
+    font-family: 'Roboto', sans-serif;
+}
+.font div:last-of-type *{
+    font-family: 'Slabo 27px', serif;
+}
+
+#styleguide h2{
+    color: white;
+}
+#styleguide ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#styleguide ul > * {
+    display: block;
+    margin: 0 auto;
+    padding: 1em;
+}
+#styleguide{
+    background-color: #002C4B;
+    display: none;
+    left: 0;
+    position: relative;
+    width: 100%;
+    transition: height 1s;
+    height: 0;
+}
+#close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 2em;
+    padding: 1em;
+    transition: 0.5s;
+    color: white;
+    background-color: black;
+}
+#close:hover{
+    color: black;
+    background-color: white;
 }
 .nav-emner{
+    background-color: #2E4272;
     box-sizing: border-box;
     padding: 0 0.5em; 
     max-width: 15%;
@@ -39,8 +114,26 @@ blockquote{
     border: 1px solid #000;
     border-radius: 5px;
 }
-.nav-emner li a{
+.nav-emner li{
     font-size: 1.5em;
+}
+.ref {
+    font-size: 120%;
+    display: flex;
+    justify-content: space-between;
+}
+.ref a{
+    transition: 0.2s;
+    text-align: center;
+    width: 100%;
+    display: block;
+    max-width: 100%;
+    padding: 1em 0;
+    color: white;
+    background-color: rgba(0,0,0,0.2);
+}
+.ref a:hover{
+    background-color: rgba(0,0,255, 0.3);
 }
 .emner{
     width: 75%;

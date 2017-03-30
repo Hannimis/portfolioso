@@ -1,6 +1,8 @@
 window.onload = function(){
 }
 function listen(){
+    var style = document.getElementById('style');
+    var close = document.getElementById('close');
     var elems = document.getElementsByClassName('content')
     var navs = document.getElementById('emne-nav');
     navs = navs.getElementsByTagName('LI');
@@ -16,11 +18,18 @@ function listen(){
     
     for(var j = 0; j < navs.length; j++){
         navs[j].addEventListener('click', function(e){
-           var temp = e.target.getAttribute('VALUE');
+           var temp = e.target.getAttribute('ID');
+            temp = temp.slice(0,3);
             clearMe(temp);
         });
     }
-    
+    close.addEventListener('click', function(){
+        document.getElementById('styleguide').style.display = 'none';
+    });
+    style.addEventListener('click', function(){
+        document.getElementById('styleguide').style.display = 'block';
+        document.getElementById('styleguide').style.height= '100vh';
+    });
 }
 function clearMe(iden){
     var elems = document.getElementsByClassName('clearMe');

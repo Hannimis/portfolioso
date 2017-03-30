@@ -10,9 +10,13 @@ p, blockquote{
     padding: 0.5em;
     line-height: 1.25;
 }
+a{
+    cursor: pointer;
+}
 * {
     box-sizing: border-box;
 }
+
 .wrapper {
     margin: 0 auto;
 }
@@ -20,11 +24,15 @@ p, blockquote{
     max-width: 80%;
     margin: 0 auto;
 }
+.primary {
+    display: flex;
+    justify-content: center;
+}
 .wrapper > .global {
     display: flex;
 }
 nav.global{
-    background-color: white;
+    background-color: #4F628E;
 }
 div.wrapper > nav.global {
     display: block;
@@ -34,6 +42,9 @@ div.wrapper > nav.global {
         max-width: 80%;
         margin: 0 auto;
     }
+}
+.nav a{
+    font-family: sans-serif;
 }
 div.nav-menu ul{
     flex-flow: wrap;
@@ -57,14 +68,14 @@ div.nav-menu ul li a{
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
-    color: black;
+    color: white;
     display: block;
     line-height: 30px;
     text-decoration: none;
     transition: 0.2s;
 }
 div.nav-menu ul li a:hover{
-    background-color: #ccc;
+    background-color: #7887AB;
 }
 .nav-toggle{ /** damn specificity **/
     display: inline-block;
@@ -77,7 +88,7 @@ a.nav-toggle{
     padding: 10px;
 }
 a.nav-toggle:hover{
-    background-color: #ccc;
+    background-color: #7887AB;
 }
 a.nav-toggle.active{ /** .active is active at widths below 640px **/ 
     display: block;
