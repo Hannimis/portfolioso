@@ -105,6 +105,9 @@ li > a {
     position: fixed;
     left: 10%;
 }
+.nav-emner li{
+    cursor: pointer;
+}
 #blocky{
     width: 50%;
     margin: 0.5em;

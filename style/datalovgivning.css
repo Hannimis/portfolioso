@@ -1,11 +1,13 @@
 body{
     background-color: #7887AB;
 }
-.innerwrapper {
+.primary {
     background-color: white;
 }
 .primary {
+    box-sizing: border-box;
     padding: 1em;
+    margin: 1em 0;
     justify-content: space-between;
 }
 
@@ -34,4 +36,15 @@ body{
     display: block;
     max-height: 100%;
     max-width: 100%; 
+}
+.overwatch p{
+    max-width: 50%;
+}
+.overwatch .eldward{
+    display: block;
+    width: 50%;
+    max-width: 100%;
+}
+.overwatch .eldward img{
+    max-width: 100%;
 }
